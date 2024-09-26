@@ -1,9 +1,12 @@
-n = 30
+import time;
+
+t = time.time_ns()
+n = 300
 
 def flippblipp(n):
     if n % 3:
         if n % 5:
-            return n
+            return str(n)
         else:
             return "blipp"
     elif n % 5:
@@ -14,3 +17,4 @@ def flippblipp(n):
 for i in range(1, n):
     print(flippblipp(i))
 
+print(time.time_ns() - t, "ns")
