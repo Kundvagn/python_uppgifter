@@ -13,8 +13,7 @@ n = 1
 print("      ", flippblipp(n))
 while(True):
     n += 1
-    print("nästa: ", end="")
-    i = input()
+    i = input("nästa: ")
     if i != flippblipp(n):
         print("Game Over")
         break

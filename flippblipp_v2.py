@@ -1,6 +1,3 @@
-import time;
-
-t = time.time_ns()
 n = 300
 
 def flippblipp(n):
@@ -16,5 +13,3 @@ def flippblipp(n):
 
 for i in range(1, n):
     print(flippblipp(i))
-
-print(time.time_ns() - t, "ns")
